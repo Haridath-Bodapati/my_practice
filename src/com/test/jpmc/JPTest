@@ -1,0 +1,96 @@
+Jesus
+
+Response
+Firstname
+Lastname
+Middlename
+
+Response1
+fname
+
+
+response1.setFname(Response.getFirstName());
+
+
+ResponseCompartor implements Compartor {
+
+@Override
+int compare(Object input1, Object input2){
+return input1.getFirstName().compareTo(input2.getFirstName));
+}
+
+}
+
+
+TreeMap<Response, String> map = new TreeMap<>());
+
+ResponseCompartor rc = new ResponseCompartor();
+
+
+Red, G,B
+
+Toy
+
+RedToy
+GreenToy
+BlueToy
+
+Map<Toy, Color>
+
+
+
+
+store - store colors 
+
+
+Map<Color, List<Toy>> toysMap = new HashMap<>();
+List<Toy> redToys = new ArralyList<>();
+if(Color.Red.equals(red){
+redToys.add(toy);
+}
+
+
+toysMap.put(RedToy, redToys);
+toysMap.put(GreenToy, greenToys);
+toysMap.put(RedToy, redToys);
+
+
+
+toysMap.put(Red, Re
+
+retreive - retrive coloers
+
+
+
+
+
+
+Employee
+name, age
+
+List<Employee> list = new ArralyList<>();
+
+All employees by thier ages
+
+list.stream().collect(Collectors.groupingBy(Employee::age, Collectors.toList())
+
+
+All the employee names who are 30 year or old
+
+employees.stream().filter(e -> e.getAge() >= 30).map(Employee::name).collect(Collectors.toList());
+
+
+
+
+List<Employee> ageThirtyEmployees = new ArralyList<>();
+
+for(int i =0; i<employees.size(); i++){
+	Employee e = employees.get(i);
+	if(e!= null){
+		if(e.getAge()>30){
+			ageThirtyEmployees.add(e);
+		}
+	}
+}
+
+return ageThirtyEmployees;

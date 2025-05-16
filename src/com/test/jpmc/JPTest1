@@ -1,0 +1,95 @@
+Jesus
+
+#
+
+
+
+
+
+
+
+
+
+id, name, role
+write a function for a give role, extract the list of employees
+
+
+Role,
+List<Emp> filterdEmployees = list.stream().filter(e -> {
+							e.getRole().equalsIgnoreCase(role);
+							}.collect(Collectors.toList());
+						  }
+return filterdEmployees.stream().map(e -> {
+							e.setRole(newRole);
+							}.collect(Collectors.toList());
+						  }
+Solution						  
+list.stream.filter( e -> e.getRole().equalsIgnoreCase(role))
+           .peek( e -> e.setRole(newRole))
+		   .collect(Collectors.toList());
+						  
+10 Employees, role 4,
+
+
+
+for(int i = 0; i < empList.size(); i++){
+if(empList.get(i).getRole().equalsIgnoreCase(role)){
+
+empList.get(i).setRole(newRole);
+
+}
+}
+return empList;
+
+int hasCode(){
+
+int prime = 7;
+return emp.getId() * prime + emp.getName().hasCode() * prime;
+}
+
+Correct implementation
+@Override
+public int hashCode() {
+    final int prime = 31;
+    int result = 1;
+    result = prime * result + ((email == null) ? 0 : email.hashCode());
+    result = prime * result + (int) (id ^ (id >>> 32));
+    result = prime * result + ((name == null) ? 0 : name.hashCode());
+    return result;
+}
+
+HashMap<Employee, Integer> empMap = new HashMap<>();
+
+empMap
+
+#
+
+public class MyException extends RuntimeException{
+
+	MyException(String message, Throwable exception){
+		super(message, exception);
+		
+	}
+	
+	void myMethod() throws MyException{
+	
+      throw new MyException();
+	}
+
+}
+
+Employee id, name, managerId
+
+1 Gaurav null
+2 Suraj  1
+
+
+Suraj, Gaurav
+Gaurav, null
+
+empname, managername
+
+throw 
+
+select name, managerId from Employee e groupby 
+@ControllerAdvice and what is the @EnableAutoConfiguration
