@@ -39,8 +39,8 @@ public class Employee {
 		int prime = 31;
 		
 		result = result * prime + salary;
-		result = result * prime + (null == name ? 1 : name.hashCode());
-		result = result * prime + (null == dept ? 1 : dept.hashCode());
+		result = result * prime + (null == name ? 0 : name.hashCode());
+		result = result * prime + (null == dept ? 0 : dept.hashCode());
 		return result;
 	}
 	

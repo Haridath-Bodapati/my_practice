@@ -1,8 +1,8 @@
 package com.java8;
 
 public class HashCodeAndEquals {
-	Employee emp1 = new Employee("hari", 1, "it");
-	Employee emp2 = new Employee("hari", 1, "it");
+	Employee emp1 = new Employee("hari", 1, null);
+	Employee emp2 = new Employee("hari", 1, null);
 
 	public static void main(String[] args) {
 		
