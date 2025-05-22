@@ -27,22 +27,23 @@ public class BinarySearch {
 	}*/
 	
 	int binarySearch(int arr[], int finder) {
-
-		int low = 0, high = arr.length - 1;
-		while(low <= high) {
-		int middle = low + (high - low) / 2;
 		
+		int low = 0, high = arr.length - 1;
+		
+		while(low <= high) {
+			int middle = low + (high - low) / 2;
+			
 			if(arr[middle] == finder)
 				return middle;
 			
-			if(arr[middle] < finder) 
+			if(arr[middle] < finder)
 				low = middle + 1;
 			else
 				high = middle - 1;
 		}
 		
-		return -1;
-			
+		return -1	;
+		
 	}
 
 	// Driver code

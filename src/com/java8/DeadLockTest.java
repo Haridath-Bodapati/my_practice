@@ -20,8 +20,6 @@ public class DeadLockTest {
 		      }  
 		    };  
 		  
-		    Thread t3 = new Thread(() -> System.out.println());
-		    t3.start();
 		    
 		    // t2 tries to lock resource2 then resource1  
 		    Thread t2 = new Thread() {  
@@ -38,9 +36,12 @@ public class DeadLockTest {
 		      }  
 		    };  
 		  
+		    Thread t3 = new Thread(() -> System.out.println());
 		      
 		    t1.start();  
-		    t2.start();  
+		    t2.start();
+		    
+		    t3.start();
 		  }  
 
 }

@@ -5,7 +5,6 @@ public class HCF {
 	public static void main(String[] args) {
 		int hcf = getHCF(16, 32);
 		System.out.println("The HCF is "+ hcf);
-
 	}
 
 	private static int getHCF(int i, int j) {
@@ -19,7 +18,6 @@ public class HCF {
 				return k;
 			}
 		}
-		
 		
 		return 1;
 	}
