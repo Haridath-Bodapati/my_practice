@@ -1,0 +1,132 @@
+Jesus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+	path:EmployeeComponejt
+	loadChildren:AdrressComponent 
+}
+
+constructor(httpClint: HttpClient){
+}
+
+htppClinet.put("http://localhot:8080/employee");
+
+respone => {
+	success => {}
+	error=> {}
+}
+
+Deptm, Employee one dept have many employees
+
+Filter Dept based on the location = Banagalore
+Employee who age is > 60
+
+
+
+Predicate deptLoationPredicate = deptList.stream().filter( dept -> dept.location().equalsIgnoreCase("Banagalore");
+Predicate empAgePredicate = deptList.getEmplyee().stream().filter( emp -> emp.age()>60);
+empList.stream().filter(deptPred).and(empAge).collect(Collectors.toList(), Collectors.mappingBy();
+
+id = 123
+name = abc
+
+id = 123
+name = abc
+
+@onetoMany(mappedby="emp")
+Dept
+
+<set id=" " class="dept"
+	mappby = emp>
+	
+
+
+List<emp> emp= dept.getEmplyee();
+
+
+String[] inputArry = new String[]{1,2,3,5,7,@,-3,-2,-1,6,7,9};
+
+String[] consecutiveelements = new String[inputArry.length];
+
+for(int i = 0; i < inputArry.length; i++) {
+	if( i + 1 < inputArry.length){
+	
+		inputArry[i] == inputArry[i+1]+1;
+		consecutiveelements[i] = inputArry[i];
+	}
+}
+
+String input = "Candidate";
+
+Map<Character, Long> charOccurenceMap = input.chars().mapToObj( c -> (char) c)
+			.collect(Collectors.groupingBy(Function.identity(),Collectors.counting));
+			
+System.out.println("The character occurences are "+ charOccurenceMap);
+
+Employee
+empId - primary
+deptId - Foriegn
+name
+age
+
+Dept
+deptid - primary
+
+emp name and ages
+
+Select name, age from Employee e Group BY e.name, e.age join Dept dept where dept.deptId = e.deptId;
+
+
+EMployeeService
+
+saveEmployee()
+
+empser1, empserc2
+@Autowired(byType="type")
+@Qualifier("empserv2")
+Employee -- Adress
+
+<look-up-method methodName="createAdress" beanName= "EmployeeAdressBean">
+
+LIst<String> 
+
+
+
+getFrequency(List<Sring> fruitList){
+
+	Map<Sring, Long) fruitCountMap = fruitList().stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting());
+	
+	
+}
+
+Stirng fruit = "Banana";
+
+fruit.chars().mapToObj(c -> (char) c)
+			.collect(Collectors.counting(Function.identity(), Collectors.counting())
+			.entrySet().filter(e -> e.getValue() == 1).map(Map.Entry::getKey).collect(Collectors.toList);
+			
+			
+			
+AsyncRestTemplete ast = new 
+AsyncRestTemplete ast1 = new 
+AsyncRestTemplete ast2 = new 
+
+CompletableFuture.ofAll(future1, future2, future3).supplyAsync(
+
+
+empList.stream().collect(Collectors.groupingBy(Employee::getSalary)).min(Collectors.comparingBy(Employee::getSalary));
