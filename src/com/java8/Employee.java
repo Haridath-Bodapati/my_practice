@@ -33,7 +33,7 @@ public class Employee {
 	}
 	
 	
-	public int hashCode() {
+	/*public int hashCode() {
 		
 		int result = 1;
 		int prime = 31;
@@ -84,7 +84,7 @@ public class Employee {
 	           Objects.equals(dept, emp.dept);
 	}*/
 	
-	/*@Override
+	@Override
 	public boolean equals(Object obj) {
 		
 		if(this == obj)
@@ -104,9 +104,9 @@ public class Employee {
 			//return false;
 		
 		
-	}*/
+	}
 	
-	/*@Override
+	@Override
 	public int hashCode( ) {
 		
 		int result = 1;
@@ -118,9 +118,7 @@ public class Employee {
 		
 		return result;
 		
-		
-		
-	}*/
+	}
 
 	
 	

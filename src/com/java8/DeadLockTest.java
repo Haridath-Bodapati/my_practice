@@ -13,7 +13,7 @@ public class DeadLockTest {
 
 					try {
 						Thread.sleep(100);
-					} catch (Exception e) {
+					} catch (InterruptedException e) {
 					}
 
 					synchronized (resource2) {
@@ -31,7 +31,7 @@ public class DeadLockTest {
 
 					try {
 						Thread.sleep(100);
-					} catch (Exception e) {
+					} catch (InterruptedException e) {
 					}
 
 					synchronized (resource1) {
@@ -41,7 +41,7 @@ public class DeadLockTest {
 			}
 		};
 
-		Thread t3 = new Thread(() -> System.out.println());
+		Thread t3 = new Thread(() -> System.out.println("This is thread three"));
 
 		t1.start();
 		t2.start();

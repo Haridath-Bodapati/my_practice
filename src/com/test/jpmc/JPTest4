@@ -1,0 +1,10 @@
+Java Polymorphism
+Method signature, overloading and overriding,
+Write code for Consumer and BiCounsumer
+Java 21 features, what do you like
+Mention what is the feature you liked in recent version of spring
+Difference between @Bean and other annotations, what is the difference @Beans in @Configuration and other annotations
+Kafka scenario
+Why Kubernetes advantages
+Kubernetes scenario - what if it have more pods than consumer --- Answer is Harizontal Pod Autoscaler
+Custom Stack Implementation

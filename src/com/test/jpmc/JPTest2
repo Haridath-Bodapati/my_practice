@@ -79,6 +79,9 @@ All the employee names who are 30 year or old
 
 employees.stream().filter(e -> e.getAge() >= 30).map(Employee::name).collect(Collectors.toList());
 
+//Correct solution
+employees.stream().filter(e -> e.getAge() >= 30).collect(Collectors.mapping(Employee::getName, Collectors.toList());
+
 
 
 

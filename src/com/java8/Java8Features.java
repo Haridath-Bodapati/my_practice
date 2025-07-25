@@ -256,12 +256,23 @@ public class Java8Features {
 		Map<Employee, Integer> empMap = new HashMap<>();
 		TreeMap<Employee, Integer> employeeTreeMap = new TreeMap<Employee, Integer>(Comparator.comparingInt(Employee::getSalary));
 		TreeMap<Employee, Integer> employeeTreeMap1 = new TreeMap<>(empMap);
-		
 		Comparator<Employee> employeeNameComparator1
+		= Comparator.comparing(
+				Employee::getName);
+		
+		Comparator<Employee> employeeNameComparator2
 	      = Comparator.comparing(
 	        Employee::getName, (s1, s2) -> {
 	            return s2.compareTo(s1);
 	        });
+		
+		
+		//All the employee names whose salary is 30 or more
+
+		employees.stream().filter(e -> e.getSalary() >= 30).map(Employee::getName).collect(Collectors.toList());
+
+		//Correct solution
+		employees.stream().filter(e -> e.getSalary() >= 30).collect(Collectors.mapping(Employee::getName, Collectors.toList()));
 	}
 	
 	private static Map<String, Employee> getTopSalariedEmpForDept(List<Employee> employees) {

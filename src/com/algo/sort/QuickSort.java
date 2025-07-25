@@ -7,9 +7,9 @@ public class QuickSort {
 
 	private static void quickSort(int[] arr, int low, int high) {
 		if (low < high) {
-			int pivotIndex = partition(arr, low, high);
-			quickSort(arr, low, pivotIndex - 1);
-			quickSort(arr, pivotIndex + 1, high);
+			int partitionIndex = partition(arr, low, high);
+			quickSort(arr, low, partitionIndex - 1);
+			quickSort(arr, partitionIndex + 1, high);
 		}
 	}
 
