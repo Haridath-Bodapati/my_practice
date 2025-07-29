@@ -1,7 +1,7 @@
 //Jesus
 package com.test.jpmc;
 
-public class Test {
+public class Test_old {
 
 	public static void main(String[] args) {
 		
